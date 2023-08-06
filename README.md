@@ -17,9 +17,22 @@ I still cannot get used to Mac's windows management. Especially if I have multip
 
 ### Shottlr
 
+I used it a lot when I need to share screenshots but I do not want to screenshot the whole screen, just snippets of the screen. I configured the capture area to my F1 key. I can press `F1` and drag a selection box on the part of the screen that I want to screenshot, I can then copy it and paste it into telegram or whatever. The scroll capture is also useful if you want to screenshot a long webpage or your longass code.
+
 ### Hustler
 
+This is a paid software and to be honest, you probably don't need it. I used it to timelapse my screen capture. Sometimes when I am coding something, I find timelapsing a good motivation to keep to glued to the screen and code, because you know that you are being "watched" and you know that if you idle for too long, it's gonna cause a hole in the end result. Different people works differently and timelapses is a thing for me, which is why I included this software
+
 ### Tinkertool
+
+A tool for you to configure your macbook that could otherwise only be configured through the terminal. For example, I used it to disable animation and delay when showing the dock. The animation is nice but it's slow
+
+### Other configuration
+
+I use stage manager.  
+I hide my dock, and make it appear only if my cursor goes to the bottom  
+If my cursor goes to the bottom left, my mac goes to sleep  
+I also set F keys to be the standard since I probably use the F keys more than any of the others.
 
 ## Shell
 
@@ -27,7 +40,7 @@ Oh My Zsh - syntax highlighting and auto completion for shell commands
 
 ## Vim
 
-These are the Vim commands that I use. Note that commands are case sensitive. Note that the "+" is not meant to be a command to be pressed, it is used to denote "plus" in this context.
+These are the Vim commands that I use. Note that commands are case sensitive. Note that the "+" is not meant to be a command to be pressed, it is used to denote "plus" in this context. My vim configuration is in another file
 
 `o` Create a new line and start writing. `i` goes into insert mode without creating a new line, though I don't really use it  
 `c i "` Replace and edit the closest string in quotation mark. You can switch out " to [ for the same effect for strings in [], or anything similar  

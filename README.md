@@ -55,11 +55,11 @@ I also set F keys to be the standard since I probably use the F keys more than a
 `CMD + w` close the current tab (used mostly in browsers/VSCode)
 `CMD + q` quit the current application
 
-## Shell
+# Shell
 
 Oh My Zsh - syntax highlighting and auto completion for shell commands
 
-## Vim
+# Vim
 
 These are the Vim commands that I use. Note that commands are case sensitive. Note that the "+" is not meant to be a command to be pressed, it is used to denote "plus" in this context. My vim configuration is in another file
 

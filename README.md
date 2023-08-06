@@ -3,15 +3,23 @@
 This is a collection of shortcuts and configurations for my workflow. I am currently using an M1 Macbook Air. Just in case I get a new laptop in the future, this will be a good starting point to get to back on track.
 Others might also be able to find something useful here.
 
-## Macbook
+# Macbook
 
-### Extensions and Softwares (From Most Used to Least Used)
+## Extensions and Softwares (From Most Used to Least Used)
 
-Alfred - MUST HAVE. I bought the Powerpack but you don't have to. The search feature is far superior to Spotlight, which is why I replaced my CMD + Space with Alfred search. For example, `in [content]` will search for all the files that contain the content. Imagine having a CMD F feature, but instead of searching for the word in the current file, it searches for the word in your whole Mac. This is useful if you have like 20 pdfs worth of lecture slides downloaded in your mac and you want to open the correct lecture slide in the correct page based on a specific keyword. `find [file]` will open up the finder location of the file. You can also add custom workflows, many of which are open source and can be downloaded online. Some of the ones I have include the emoji workflow, where I just need to type in `emoji [description]` in the search to search for emojis, where I can copy by pressing enter. Another feature that I use a lot is the snippets, where you can pre-set keywords that when typed, will be auto converted to the full word. For example, I set my address as `!address`, which means I can just type that and the text will be converted to my address, this saves time + I no longer have to remember my postal code. I did the same for my email, fin number etc. Other features include the inbuilt calculator feature in the search (you will be surprised by how much you would use it), and being able to navigate to other parts of the system purely from the search. For example, I can open up the bluetooth settings by just entering `bluetooth` in the search. This gives you vim like navigation power for your mac and you can navigate to many places efficiency with just your keyboard  
-Alt Tab - I still cannot get used to Mac's windows management. Especially if I have multiple windows of the same app (like chrome) open and I want to be able to navigate between each of them quickly. This brings the Windows navigation to your mac, and I wish I had discovered it sooner
-Shottr
-Hustlr
-Tinkertool
+### Alfred
+
+MUST HAVE. I bought the Powerpack but you don't have to. The search feature is far superior to Spotlight, which is why I replaced my CMD + Space with Alfred search. For example, `in [content]` will search for all the files that contain the content. Imagine having a CMD F feature, but instead of searching for the word in the current file, it searches for the word in your whole Mac. This is useful if you have like 20 pdfs worth of lecture slides downloaded in your mac and you want to open the correct lecture slide in the correct page based on a specific keyword. `find [file]` will open up the finder location of the file. You can also add custom workflows, many of which are open source and can be downloaded online. Some of the ones I have include the emoji workflow, where I just need to type in `emoji [description]` in the search to search for emojis, where I can copy by pressing enter. Another feature that I use a lot is the snippets, where you can pre-set keywords that when typed, will be auto converted to the full word. For example, I set my address as `!address`, which means I can just type that and the text will be converted to my address, this saves time + I no longer have to remember my postal code. I did the same for my email, fin number etc. Other features include the inbuilt calculator feature in the search (you will be surprised by how much you would use it), and being able to navigate to other parts of the system purely from the search. For example, I can open up the bluetooth settings by just entering `bluetooth` in the search. This gives you vim like navigation power for your mac and you can navigate to many places efficiency with just your keyboard
+
+### Alt-Tab
+
+I still cannot get used to Mac's windows management. Especially if I have multiple windows of the same app (like chrome) open and I want to be able to navigate between each of them quickly. This brings the Windows navigation to your mac, and I wish I had discovered it sooner
+
+### Shottlr
+
+### Hustler
+
+### Tinkertool
 
 ## Shell
 

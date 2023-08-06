@@ -5,14 +5,13 @@ Others might also be able to find something useful here.
 
 ## Macbook
 
-### Extensions (From Most Used to Least Used)
+### Extensions and Softwares (From Most Used to Least Used)
 
-Alfred - For
-Alt Tab
+Alfred - MUST HAVE. I bought the Powerpack but you don't have to. The search feature is far superior to Spotlight, which is why I replaced my CMD + Space with Alfred search. For example, `in [content]` will search for all the files that contain the content. Imagine having a CMD F feature, but instead of searching for the word in the current file, it searches for the word in your whole Mac. This is useful if you have like 20 pdfs worth of lecture slides downloaded in your mac and you want to open the correct lecture slide in the correct page based on a specific keyword. `find [file]` will open up the finder location of the file. You can also add custom workflows, many of which are open source and can be downloaded online. Some of the ones I have include the emoji workflow, where I just need to type in `emoji [description]` in the search to search for emojis, where I can copy by pressing enter. Another feature that I use a lot is the snippets, where you can pre-set keywords that when typed, will be auto converted to the full word. For example, I set my address as `!address`, which means I can just type that and the text will be converted to my address, this saves time + I no longer have to remember my postal code. I did the same for my email, fin number etc. Other features include the inbuilt calculator feature in the search (you will be surprised by how much you would use it), and being able to navigate to other parts of the system purely from the search. For example, I can open up the bluetooth settings by just entering `bluetooth` in the search. This gives you vim like navigation power for your mac and you can navigate to many places efficiency with just your keyboard  
+Alt Tab - I still cannot get used to Mac's windows management. Especially if I have multiple windows of the same app (like chrome) open and I want to be able to navigate between each of them quickly. This brings the Windows navigation to your mac, and I wish I had discovered it sooner
 Shottr
 Hustlr
-
-For my mac, I use Alfred for its various features, and one particular feature that I find the most useful is its search feature, which is way better than Mac's inbuilt Spotlight. Thus, I have replaced my CMD + Space to toggle the
+Tinkertool
 
 ## Shell
 
@@ -50,3 +49,17 @@ These should be sufficient to do like 90% of the tasks. Here are some other comm
 `^` Go to the first non white-space character of the line
 
 Note that these are just the basic commands, and the best way to remember them is to actually experiment and use them. You should also try chaining different commands together and notice the patterns (eg. if I know what `w` does and what `b` does, and I know `NUMBER + w` works, I can assume that `NUMBER + b` would also work. The learning curve is quite steep, but once you get the hang of it, it actually helps a lot in improving efficiency. I am still actively trying. You will start to weed out the omes that you find helpful and remembering them will come naturally. Different people have different workflows, so it is completely fine if you find some of these redundant.
+
+## VSCode
+
+VSCode is my main editor, and here are the extensions that I use.  
+`Github Copilot` - You can to use it for free through the Student Education Pack, which NUS is part of. Generally I find it really useful, especially in autocompleting tedious. Note that like any AI tool, it is prone to hallucination + giving buggy code so please use it with discretion  
+`Prettier` - Auto format your code when you save. Check with your organization for the actual formatting requirements of the project that you are working on because the default configuration might not be in accordance to your guidelines. I find it to be a good tool to ensure consistency, and help me save time by doing the tedious tasks for me (like indentations and putting semicolons)  
+`Error Lens` - Improve error highlights. I've used it for so long that I thought the error messages are in built into VSCode. Must have  
+`IntelliCode` - Same thing. I've used it for so long that I thought it's inbuilt into VSCode. Must have  
+`Vim` - I use Vim in VSCode for the other VSCode extensions.  
+`Auto Rename Tag` - When you are editing tags, it automatically help you edit the closing tag as well. It solves one problem but it saves a lot of time
+
+Now we are moving towards Project specific extensions  
+`ES7 React Snippets` - For React. Honestly, the only snippet I use is rcfe which creates a functional boilerplate component for you  
+`Bootstap / Tailwind Intellisense` - Suggestions on the existing classes for bootstrap/tailwind, if you use any of these libraries. Great so that you don't have to always look up documentation

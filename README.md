@@ -68,7 +68,7 @@ These are the Vim commands that I use. Note that commands are case sensitive. No
 `dd` Delete the current line (and copy to the vim clipboard. Note that the vim clipboard is different from your laptop's clipboard)  
 `d` Delete selection (and copy to vim clipboard)  
 `NUMBER + dd` Delete number of lines
-`u` Undo. Usually used after you have deleted something or inserted something
+`u` Undo. Usually used after you have deleted something or inserted something  
 `V` Highlight the whole line  
 `p` Paste whatever that is in your vim clipboard. I normally use the macbook clipboard though  
 `LINE NUMBER + G` Go to the line number  
@@ -80,13 +80,13 @@ These are the Vim commands that I use. Note that commands are case sensitive. No
 `NUMBER + Arrow up/down` Navigate number of lines up or down relative to current line. Yes, I use arrow keys. I also normally use it after highlighting with `V`. For example, if I want to select the function that is 5 lines long, I would do `V 5 ARROW DOWN`  
 `0` Go to the start of the current line  
 `$` Go to the end of the current line  
-`G` Go to the last line in the file. Normally I used it when I highlight the line with `Shift + V` then use to to highlight until the end of the line
+`G` Go to the last line in the file. Normally I used it when I highlight the line with `V` then use to to highlight until the end of the line
 `>` Add identation after highlighting the whole code snippet. `2 + >` for 2 identations and so on. Likewise, use `<` for "reverse" indentation
 
-These should be sufficient to do like 90% of the tasks. Here are some other commands
-`OPTION + arrow key` Swap positions of lines/code blocks
+These should be sufficient to do like 90% of the tasks. Here are some other commands  
+`OPTION + arrow key` Swap positions of lines/code blocks  
 `CTRL + arrow key` Start selecting vertically, when will then be accompanied by either `x` to delete or `I` to insert. Which I normally use it to comment out chunks of code blocks/delete comments of chunks of code blocks  
-`zz` Move the cursor to the middle of the screen
+`zz` Move the cursor to the middle of the screen  
 `GV` Reselect the previously selection. I normally use this when I select a code block and add indentation with `>`. Then I realized I need more indentation, thus I had to reselect the previous code block to add another indentation  
 `^` Go to the first non white-space character of the line
 

@@ -65,6 +65,7 @@ These are the Vim commands that I use. Note that commands are case sensitive. No
 
 `o` Create a new line and start writing. `i` goes into insert mode without creating a new line, though I don't really use it  
 `c i "` Replace and edit the closest string in quotation mark. You can switch out " to [ for the same effect for strings in [], or anything similar  
+`c i t` Replace and edit the content inside the closest tag (divs etc.), useful for web development  
 `dd` Delete the current line (and copy to the vim clipboard. Note that the vim clipboard is different from your laptop's clipboard)  
 `d` Delete selection (and copy to vim clipboard)  
 `NUMBER + dd` Delete number of lines

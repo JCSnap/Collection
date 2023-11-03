@@ -71,7 +71,7 @@ NUMBER` + `Arrow up/down` Navigate number of lines up or down relative to curren
 `gg` Go to the start of the page.  
 `Ctrl` + `F` Go forward by one page. Useful for jumping through your code fast.  
 `Ctrl` + `B` Go backward by one page.  
-`f` + `VALUE` Go to the first instace of the VALUE. For example, `f` + `c` will put your cursor at the next `c` in the line. This is one of the most used command. It also works for non alphanumeric values like `"` etc.  
+`f` + `VALUE` Go to the first instace of the VALUE. For example, `f` + `c` will put your cursor at the next `c` in the line. This is one of the most used command. It also works for non alphanumeric values like `"` etc. Use `F` to search backwards instead.  
 `}` Go to the next paragraph. Helpful for jumping code blocks by code blocks.  
 `{` Go to the previous paragraph.  
 `H` Put your cursor at the High of the page.  
@@ -91,10 +91,11 @@ NUMBER` + `Arrow up/down` Navigate number of lines up or down relative to curren
 `p` Paste whatever that is in your vim clipboard. I normally use the macbook clipboard though.  
 `s` Substitute the current highlighted word/line(s). Normally used after you have selected a chunk.  
 `dw` Delete the current word.  
+`cw` Basically `dw` but you go into insert mode after. Useful for when you want to change the word instead of just deleting it.  
 `D` Delete from your cursor to the end of the line.  
 `>` Add identation after highlighting the whole code snippet. `2` + `>` for 2 identations and so on. Likewise, use `<` for "reverse" indentation.  
 
-These should be sufficient to do like 90% of the tasks. Here are some other commands  
+**These should be sufficient to do like 90% of the tasks. Here are some other commands:**  
 `OPTION` + `arrow key` Swap positions of lines/code blocks. This might be a VSCode shortcut instead of Vim.  
 `CTRL` + `arrow key` Start selecting vertically, when will then be accompanied by either `x` to delete or `I` to insert. Which I normally use it to comment out chunks of code blocks/delete comments of chunks of code blocks.  
 `zz` Move the cursor to the middle of the screen.  
@@ -103,6 +104,9 @@ These should be sufficient to do like 90% of the tasks. Here are some other comm
 
 Note that these are just the basic commands, and the best way to remember them is to actually experiment and use them. You should also try chaining different commands together and notice the patterns (eg. if I know what `w` does and what `b` does, and I know `NUMBER` + `w` works, I can assume that `NUMBER` + `b` would also work. The learning curve is quite steep, but once you get the hang of it, it actually helps a lot in improving efficiency. I am still actively trying. You will start to weed out the omes that you find helpful and remembering them will come naturally. Different people have different workflows, so it is completely fine if you find some of these redundant.
 
+## Commands that I find helpful and I am still trying to incorporate into my workflow
+Using `HJKL` instead of `Up/Down/Left/Right` arrow key.  
+Chaining commands together to manipulate text. For example, suppose I want to change variableName to constantName. I would normally just delete the whole word and rewrite it. However, I could do something like `ctN` as in delete the words up until before `N` and go into insert mode.  
 ## VSCode
 
 VSCode is my main editor, and here are the extensions that I use.  

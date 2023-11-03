@@ -65,7 +65,7 @@ These are the Vim commands that I use. Note that commands are case sensitive. No
 
 `o` Create a new line and start writing. 
 `i` goes into insert mode without creating a new line, though I don't really use it, still use `o` more often.    
-`c i "` Replace and edit the closest string in quotation mark. You can switch out " to [ for the same effect for strings in [], or anything similar.  
+`c i "` Replace and edit the closest string in quotation mark. You can switch out `"` to `[` for the same effect for strings in [], or anything similar.  
 `c i t` Replace and edit the content inside the closest tag (divs etc.), useful for web development.  
 `dd` Delete the current line (and copy to the vim clipboard. Note that the vim clipboard is different from your laptop's clipboard).  
 `d` Delete selection (and copy to vim clipboard).  
@@ -74,7 +74,7 @@ These are the Vim commands that I use. Note that commands are case sensitive. No
 `V` Highlight the whole line.  
 `p` Paste whatever that is in your vim clipboard. I normally use the macbook clipboard though.  
 `LINE NUMBER` + `G` Go to the line number.  
-`w` Navigate to the next word. Likewise, you can use `NUMBER` +` w` to jump number of words ahead.  
+`w` Navigate to the next word. Likewise, you can use `NUMBER` +`w` to jump number of words ahead.  
 `e` Jump to end of current word.  
 `b` Navigate to the previous word, basically the opposite of `w`. Likewise, you can use `NUMBER` + `b` to jump number of words back.  
 `s` Substitute the current highlighted word/line(s). Normally used after you have selected a chunk.  

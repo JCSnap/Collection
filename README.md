@@ -5,7 +5,27 @@ Others might also be able to find something useful here.
 
 # Macbook
 
-## Extensions and Softwares (From Most Used to Least Used)
+## Table of Content
+- [Extensions and Softwares](#extensions-and-softwares)
+    - [Alfred](#alfred)
+    - [Alt Tab](#alt-tab)
+    - [Shottr](#shottr)
+    - [Hustl](#hustl)
+    - [Tinkertool](#tinkertool)
+    - [Rectangle](#rectangle)
+    - [Postman](#postman)
+    - [Obsidian](#obsidian)
+    - [Others](#others)
+- [Configurations](#configurations)
+- [Common Shortcuts](#common-shortcuts)
+- [Vim](#vim)
+    - [Navigation](#navigation)
+    - [Manipulation](#manipulation)
+    - [Commands](#commands)
+- [VSCode](#vscode)
+    - [Extensions](#extensions)
+
+## Extensions and Softwares
 
 ### Alfred
 
@@ -15,7 +35,7 @@ MUST HAVE. I bought the Powerpack but you don't have to. The search feature is f
 
 ANOTHER MUST HAVE (especially if you are used to Window's alt tab). I still cannot get used to Mac's windows management. Especially if I have multiple windows of the same app (like chrome) open and I want to be able to navigate between each of them quickly. This brings the Windows navigation to your mac, and I wish I had discovered it sooner
 
-### Shottlr
+### Shottr
 
 I used it a lot when I need to share screenshots but I do not want to screenshot the whole screen, just snippets of the screen. I configured the capture area to my F1 key. I can press `F1` and drag a selection box on the part of the screen that I want to screenshot, I can then copy it and paste it into telegram or whatever. The scroll capture is also useful if you want to screenshot a long webpage or your longass code.
 
@@ -39,27 +59,59 @@ For you to temporarily drop and "store" images etc. in the dropzone which you ca
 
 To test out APIs
 
-### Other configuration
+### Obsidian
 
-I use stage manager.  
-I hide my dock, and make it appear only if my cursor goes to the bottom  
-If my cursor goes to the bottom left, my mac goes to sleep  
-I also set F keys to be the standard since I probably use the F keys more than any of the others.
+I am starting to use Obsidian to store all my random stuff instead of Apple's note app. Obsidian stores everything in `.md` so you can use markdown syntax to write everything, which is pretty lit now that I am more familiar with markdown. It also means that it is storable and exportable (unlike Notion) where all your information is stored in the Notion app and if Notion goes away, your stuff and format will go away as well. Furthermore, Obsidian allows vim keybindings.
 
-### Shortcuts
+### Others
 
-`CMD + w` close the current tab (used mostly in browsers/VSCode)
-`CMD + q` quit the current application
+Some other apps that are trivial. Keeping it here so if I lose my data or something: 
+- Whatsapp
+- Telegram
+- Discord
+- Zoom
+- Slack
+- Powerpoint, Excel, Teams, Edge
+- Examplify
+- Goodnote
+- LumaFusion
+- Bitwarden
+- Smart Countdown Timer
+- VSCode
+- Intellij
+- Android Studio
+- MongoDB Compass
+- CalcMadeEasy
+- Figma
+- Audacity
+- Anaconda-Navigator
+- [Whisper](https://github.com/openai/whisper)
 
-# Shell
+## Configurations
 
-Oh My Zsh - syntax highlighting and auto completion for shell commands. I also set up Github Copilot for vim, just in case I need some assistance while in vim, though I use VSCode (with Vim plugin) and Intellij (with Vim plugin) as my main editor.
+- I use stage manager.  
+- I hide my dock, and make it appear only if my cursor goes to the bottom. 
+- If my cursor goes to the bottom left, my mac goes to sleep.
+- I also set F keys to be the standard since I probably use the F keys more than any of the others.
+- I mapped `CMD` + `SPACE` to open up Alfred search.
+- I mapped `ctr` + `>` in [Rectangle](#rectangle) to convert current window to full screen (technically 80% since I am using stage manager).
+- Set up environment for java and python.
+- Set up Oh My Zsh - syntax highlighting and auto completion for the terminal.
+- Set up Github Copulot for vim.
+- Set up vimrc and gitconfig from the repo.
+- Add the [Custom Commands](https://github.com/JCSnap/cli-tools) for the terminal.
 
-# Vim
+## Common Shortcuts
+
+- `CMD` + `w` close the current tab (used mostly in browsers/VSCode).
+- `CMD` + `t` open a new tab.
+- `CMD` + `q` quit the current application.
+
+## Vim
 
 These are the Vim commands that I use. Note that commands are case sensitive. Note that the "+" is not meant to be a command to be pressed, it is used to denote "plus" in this context. My vim configuration is in another file.
 
-## Navigation
+### Navigation
 - `LINE NUMBER` + `G` Go to the line number.  
 - `w` Navigate to the next word. Likewise, you can use `NUMBER` +`w` to jump number of words ahead.  
 - `e` Jump to end of current word.  
@@ -79,7 +131,7 @@ These are the Vim commands that I use. Note that commands are case sensitive. No
 - `M` Put your cursor at the Medium of the page. Let's say you have skipped many pages using `Ctrl` + `F` and reached the page that you want and the part that you want to edit is around the center of the page. Using this command is a quite way to get your cursor closer towards where you want it to be.  
 - `L` Put your cursor at the Low of the page.  
 
-## Manipulation
+### Manipulation
 - `o` Create a new line and start writing. 
 - `i` goes into insert mode without creating a new line, though I don't really use it, still use `o` more often.    
 - `c i "` Replace and edit the closest string in quotation mark. You can switch out `"` to `[` for the same effect for strings in [], or anything similar.  
@@ -96,7 +148,7 @@ These are the Vim commands that I use. Note that commands are case sensitive. No
 - `D` Delete from your cursor to the end of the line.  
 - `>` Add identation after highlighting the whole code snippet. `2` + `>` for 2 identations and so on. Likewise, use `<` for "reverse" indentation.  
 
-## Commands
+### Commands
 All commands starts with a `:`
 - `:%s/FIND/REPLACE` Replace the FIND with the words that you want to find and REPLACE with the new word. I use this quite often now that I've learnt it.
 
@@ -109,19 +161,24 @@ All commands starts with a `:`
  
 Note that these are just the basic commands, and the best way to remember them is to actually experiment and use them. You should also try chaining different commands together and notice the patterns (eg. if I know what `w` does and what `b` does, and I know `NUMBER` + `w` works, I can assume that `NUMBER` + `b` would also work. The learning curve is quite steep, but once you get the hang of it, it actually helps a lot in improving efficiency. I am still actively trying. You will start to weed out the omes that you find helpful and remembering them will come naturally. Different people have different workflows, so it is completely fine if you find some of these redundant.
 
-## Commands that I find helpful and I am still trying to incorporate into my workflow
-Using `HJKL` instead of `Up/Down/Left/Right` arrow key.  
-Chaining commands together to manipulate text. For example, suppose I want to change variableName to constantName. I would normally just delete the whole word and rewrite it. However, I could do something like `ctN` as in delete the words up until before `N` and go into insert mode.  
+**Commands that I find helpful and I am still trying to incorporate into my workflow**
+- Using `HJKL` instead of `Up/Down/Left/Right` arrow key.  
+- Chaining commands together to manipulate text. For example, suppose I want to change variableName to constantName. I would normally just delete the whole word and rewrite it. However, I could do something like `ctN` as in delete the words up until before `N` and go into insert mode.  
+
 ## VSCode
 
-VSCode is my main editor, and here are the extensions that I use.  
-`Github Copilot` - You can to use it for free through the Student Education Pack, which NUS is part of. Generally I find it really useful, especially in autocompleting tedious. Note that like any AI tool, it is prone to hallucination + giving buggy code so please use it with discretion  
-`Prettier` - Auto format your code when you save. Check with your organization for the actual formatting requirements of the project that you are working on because the default configuration might not be in accordance to your guidelines. I find it to be a good tool to ensure consistency, and help me save time by doing the tedious tasks for me (like indentations and putting semicolons)  
-`Error Lens` - Improve error highlights. I've used it for so long that I thought the error messages are in built into VSCode. Must have  
-`IntelliCode` - Same thing. I've used it for so long that I thought it's inbuilt into VSCode. Must have  
-`Vim` - I use Vim in VSCode for the other VSCode extensions.  
-`Auto Rename Tag` - When you are editing tags, it automatically help you edit the closing tag as well. It solves one problem but it saves a lot of time
+VSCode is my main editor.
+### Extensions
+Here are the extensions that I use.  
+- `Github Copilot` - You can to use it for free through the Student Education Pack, which NUS is part of. Generally I find it really useful, especially in autocompleting tedious. Note that like any AI tool, it is prone to hallucination + giving buggy code so please use it with discretion  
+- `Prettier` - Auto format your code when you save. Check with your organization for the actual formatting requirements of the project that you are working on because the default configuration might not be in accordance to your guidelines. I find it to be a good tool to ensure consistency, and help me save time by doing the tedious tasks for me (like indentations and putting semicolons)  
+- `Error Lens` - Improve error highlights. I've used it for so long that I thought the error messages are in built into VSCode. Must have  
+- `IntelliCode` - Same thing. I've used it for so long that I thought it's inbuilt into VSCode. Must have  
+- `Vim` - I use Vim in VSCode for the other VSCode extensions.  
+- `Auto Rename Tag` - When you are editing tags, it automatically help you edit the closing tag as well. It solves one problem but it saves a lot of time
+- `Plant UML` - To render the UML diagram in real time when I create UML diagrams using PlantUML.
 
 Now we are moving towards Project specific extensions  
-`ES7 React Snippets` - For React. Honestly, the only snippet I use is rcfe which creates a functional boilerplate component for you  
-`Bootstap / Tailwind Intellisense` - Suggestions on the existing classes for bootstrap/tailwind, if you use any of these libraries. Great so that you don't have to always look up documentation
+- `ES7 React Snippets` - For React. Honestly, the only snippet I use is rcfe which creates a functional boilerplate component for you  
+- `Bootstap / Tailwind Intellisense` - Suggestions on the existing classes for bootstrap/tailwind, if you use any of these libraries. Great so that you don't have to always look up documentation
+

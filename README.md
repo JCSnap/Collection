@@ -22,6 +22,7 @@ Others might also be able to find something useful here.
     - [Navigation](#navigation)
     - [Manipulation](#manipulation)
     - [Commands](#commands)
+    - [More](#more)
 - [VSCode](#vscode)
     - [Extensions](#extensions)
 
@@ -152,7 +153,8 @@ These are the Vim commands that I use. Note that commands are case sensitive. No
 All commands starts with a `:`
 - `:%s/FIND/REPLACE` Replace the FIND with the words that you want to find and REPLACE with the new word. I use this quite often now that I've learnt it.
 
-**These should be sufficient to do like 90% of the tasks. Here are some other commands:**  
+### More
+The ones above should be sufficient to do like 90% of the tasks. Here are some other commands:
 - `OPTION` + `arrow key` Swap positions of lines/code blocks. This might be a VSCode shortcut instead of Vim.  
 - `CTRL` + `arrow key` Start selecting vertically, when will then be accompanied by either `x` to delete or `I` to insert. Which I normally use it to comment out chunks of code blocks/delete comments of chunks of code blocks.  
 - `zz` Move the cursor to the middle of the screen.  

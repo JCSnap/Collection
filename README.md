@@ -116,7 +116,7 @@ These are the Vim commands that I use. Note that commands are case sensitive. No
 - `w` Navigate to the next word. Likewise, you can use `NUMBER` +`w` to jump number of words ahead.  
 - `e` Jump to end of current word.  
 - `b` Navigate to the previous word, basically the opposite of `w`. Likewise, you can use `NUMBER` + `b` to jump number of words back.  
-- NUMBER` + `Arrow up/down` Navigate number of lines up or down relative to current line. Yes, I use arrow keys, though the recommended method is to use `J`/`K` instead of `Arrow down`/`Arrow up`. I am trying to correct to use `J`/`K` instead now. I also normally use it after highlighting with `V`. For example, if I want to select the function that is 5 lines long, I would do `V 5 ARROW DOWN`.  
+- `NUMBER` + `Arrow up/down` Navigate number of lines up or down relative to current line. Yes, I use arrow keys, though the recommended method is to use `J`/`K` instead of `Arrow down`/`Arrow up`. I am trying to correct to use `J`/`K` instead now. I also normally use it after highlighting with `V`. For example, if I want to select the function that is 5 lines long, I would do `V 5 ARROW DOWN`.  
 - `0` Go to the start of the current line.  
 - `$` Go to the end of the current line.  
 - `G` Go to the last line in the file. Normally I used it when I highlight the line with `V` then use to to highlight until the end of the line.  

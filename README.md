@@ -15,6 +15,7 @@ Others might also be able to find something useful here.
     - [Rectangle](#rectangle)
     - [Postman](#postman)
     - [Obsidian](#obsidian)
+    - [Web Search Navigator](#web-search-navigator)
     - [Others](#others)
 - [Configurations](#configurations)
 - [Common Shortcuts](#common-shortcuts)
@@ -64,6 +65,10 @@ To test out APIs
 
 I am starting to use Obsidian to store all my random stuff instead of Apple's note app. Obsidian stores everything in `.md` so you can use markdown syntax to write everything, which is pretty lit now that I am more familiar with markdown. It also means that it is storable and exportable (unlike Notion) where all your information is stored in the Notion app and if Notion goes away, your stuff and format will go away as well. Furthermore, Obsidian allows vim keybindings.
 
+### Web Search Navigator
+
+This is a chrome extension that allows you to click on links without using your trackpad/mouse. For my workflow, I can navigate to the browser and do stuff with just the keyboard. Using Alfred to search for Chrome/Safari if the browser is not already open. If it is already opem, use CMD Tab to go to the browser, then use the [shortcut](#common-shortcuts) to open a new tab and start searching. However, after the search result is rendered, I still need to use my mouse to click on the first link. This tool solves that, allowing you to navigate the links using the `ARROW KEY`, and press `ENTER` on the selected link.
+
 ### Others
 
 Some other apps that are trivial. Keeping it here so if I lose my data or something: 
@@ -107,6 +112,8 @@ Some other apps that are trivial. Keeping it here so if I lose my data or someth
 - `CMD` + `w` close the current tab (used mostly in browsers/VSCode).
 - `CMD` + `t` open a new tab.
 - `CMD` + `q` quit the current application.
+- `CMD` + `ARROW KEY` go to previous/next page
+- `OPTION` + `ARROW KEY` scroll up/down page by page
 
 ## Vim
 
@@ -179,6 +186,9 @@ Here are the extensions that I use.
 - `Vim` - I use Vim in VSCode for the other VSCode extensions.  
 - `Auto Rename Tag` - When you are editing tags, it automatically help you edit the closing tag as well. It solves one problem but it saves a lot of time
 - `Plant UML` - To render the UML diagram in real time when I create UML diagrams using PlantUML.
+- `Markdown All in One` - Create table of content for markdown (among other features that I don't really use) with simple command.
+- `Turbo Console Log` - Create readable console log statements by putting your cursor on a variable and pressing `CTRL` + `OPTION` + `L`
+- `Ranbow Indent` - Colour code the indentations to make them more differentiatable. Honestly just mainly for aesthetic.
 
 Now we are moving towards Project specific extensions  
 - `ES7 React Snippets` - For React. Honestly, the only snippet I use is rcfe which creates a functional boilerplate component for you  

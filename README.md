@@ -189,6 +189,7 @@ Here are the extensions that I use.
 - `Markdown All in One` - Create table of content for markdown (among other features that I don't really use) with simple command.
 - `Turbo Console Log` - Create readable console log statements by putting your cursor on a variable and pressing `CTRL` + `OPTION` + `L`
 - `Ranbow Indent` - Colour code the indentations to make them more differentiatable. Honestly just mainly for aesthetic.
+- `Excel Viewer` - Allow preview of excel files within VSCode. Handy when doing machine learning with some excel data.
 
 Now we are moving towards Project specific extensions  
 - `ES7 React Snippets` - For React. Honestly, the only snippet I use is rcfe which creates a functional boilerplate component for you  

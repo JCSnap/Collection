@@ -17,6 +17,18 @@ Plug 'https://github.com/ap/vim-css-color' " CSS Color Preview
 Plug 'https://github.com/rafi/awesome-vim-colorschemes' " Retro Scheme
 Plug 'https://github.com/ryanoasis/vim-devicons' " Developer Icons
 Plug 'https://github.com/github/copilot.vim' " Github Copilot
+Plug 'https://github.com/ctrlpvim/ctrlp.vim' " Command p for file search similar to VSCode
+Plug 'https://github.com/folke/which-key.nvim' " Which Key
+Plug 'https://github.com/iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' } " Markdown Preview
+Plug 'norcalli/nvim-colorizer.lua' " Colorizer
+Plug 'themaxmarchuk/tailwindcss-colors.nvim' " Tailwind CSS Colors
+Plug 'https://github.com/tailwindlabs/tailwindcss-intellisense' " Tailwind CSS IntelliSense
+Plug 'neovim/nvim-lspconfig'
+Plug 'kabouzeid/nvim-lspinstall'
+Plug 'MunifTanjim/nui.nvim' " Dependency for noicevim
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'https://github.com/rcarriga/nvim-notify' " Notifications
+Plug 'https://github.com/folke/noice.nvim' " Noice Vim
 
 call plug#end()
 
@@ -28,11 +40,12 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in
 
 autocmd FileType json syntax match Comment +\/\/.\+$+
 
+nnoremap <SPACE> <Nop>
 let mapleader=" "
 
-nnoremap <C-f> :NERDTreeFocus<CR>
-nnoremap <C-n> :NERDTree<CR>
-nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <silent> <leader>f :NERDTreeFocus<CR>
+nnoremap <silent> <leader>t :NERDTreeToggle<CR>
+nnoremap <silent> <leader>m :MarkdownPreviewToggle<CR>
 
 :set completeopt-=preview " For No Previews
 
@@ -101,3 +114,9 @@ function! ShowDocumentation()
     call feedkeys('K', 'in')
   endif
 endfunction
+
+nnoremap <silent> <leader>s :CocCommand prettier.formatFile<CR>
+nnoremap <silent> <leader>p :CtrlP<CR>
+
+lua require("noice").setup()
+lua require("which-key").setup()

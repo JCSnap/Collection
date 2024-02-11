@@ -28,3 +28,10 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 alias java11="/Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home/bin/java"
 alias javac11="/Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home/bin/javac"
+alias vim="nvim"
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home
+
+source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
+source /opt/homebrew/opt/chruby/share/chruby/auto.sh
+chruby ruby-3.2.2
+

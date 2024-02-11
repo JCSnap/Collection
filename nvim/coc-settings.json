@@ -1,0 +1,6 @@
+{
+  "snippets.ultisnips.pythonPrompt": false,
+  "suggest.enablePreselect": false,
+  "suggest.selection": "first",
+  "suggest.noselect": true
+}

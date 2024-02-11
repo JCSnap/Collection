@@ -119,6 +119,8 @@ Some other apps that are trivial. Keeping it here so if I lose my data or someth
 
 These are the Vim commands that I use. Note that commands are case sensitive. Note that the "+" is not meant to be a command to be pressed, it is used to denote "plus" in this context. My vim configuration is in another file.
 
+This section is outdated. I have now switched over to neovim, and my configurations for neovim can be found in the folder `nvim`.
+
 ### Navigation
 - `LINE NUMBER` + `G` Go to the line number.  
 - `w` Navigate to the next word. Likewise, you can use `NUMBER` +`w` to jump number of words ahead.  

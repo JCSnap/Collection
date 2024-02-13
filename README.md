@@ -179,6 +179,8 @@ Note that these are just the basic commands, and the best way to remember them i
 ## VSCode
 
 VSCode is my main editor.
+### Keybindings
+- `Ctrl` + `` ` ``: Switch between the terminal and the code editor
 ### Extensions
 Here are the extensions that I use.  
 - `Github Copilot` - You can to use it for free through the Student Education Pack, which NUS is part of. Generally I find it really useful, especially in autocompleting tedious. Note that like any AI tool, it is prone to hallucination + giving buggy code so please use it with discretion  

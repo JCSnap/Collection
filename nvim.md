@@ -1,5 +1,6 @@
 # Neovim
 `Leader` is configured to `Space`
+`:wqa`: save and quit both the file and all buffers (like the file explorer)
 
 ## NerdTree
 `Leader` + `f`: focus on nerdtree (the files)

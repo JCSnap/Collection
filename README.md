@@ -57,14 +57,33 @@ For you to create shotcuts to snap windows to left right etc. And move windows b
 
 For you to temporarily drop and "store" images etc. in the dropzone which you can then use to access it elsewhere
 
-### Postman
-
-To test out APIs
-
 ### Obsidian
 
 I am starting to use Obsidian to store all my random stuff instead of Apple's note app. Obsidian stores everything in `.md` so you can use markdown syntax to write everything, which is pretty lit now that I am more familiar with markdown. It also means that it is storable and exportable (unlike Notion) where all your information is stored in the Notion app and if Notion goes away, your stuff and format will go away as well. Furthermore, Obsidian allows vim keybindings.
 
+### Karabiner
+Remap keyboard keys
+
+Current mappings:
+- Caps lock to esc
+- Long press Caps lock to Caps lock
+```
+{
+    "description": "Caps Lock to Escape on single press, Caps Lock on press and hold.",
+    "manipulators": [
+        {
+            "from": {
+                "key_code": "caps_lock",
+                "modifiers": { "optional": ["any"] }
+            },
+            "to": [{ "key_code": "escape" }],
+            "to_if_held_down": [{ "key_code": "caps_lock" }],
+            "type": "basic"
+        }
+    ]
+}
+
+```
 ### Web Search Navigator
 
 This is a chrome extension that allows you to click on links without using your trackpad/mouse. For my workflow, I can navigate to the browser and do stuff with just the keyboard. Using Alfred to search for Chrome/Safari if the browser is not already open. If it is already opem, use CMD Tab to go to the browser, then use the [shortcut](#common-shortcuts) to open a new tab and start searching. However, after the search result is rendered, I still need to use my mouse to click on the first link. This tool solves that, allowing you to navigate the links using the `ARROW KEY`, and press `ENTER` on the selected link.
@@ -102,7 +121,7 @@ Some other apps that are trivial. Keeping it here so if I lose my data or someth
 - I mapped `CMD` + `SPACE` to open up Alfred search.
 - I mapped `ctr` + `>` in [Rectangle](#rectangle) to convert current window to full screen (technically 80% since I am using stage manager).
 - Set up environment for java and python.
-- Set up Oh My Zsh - syntax highlighting and auto completion for the terminal.
+- Set up Oh My Zsh - syntax highlighting, auto completion, vim mode
 - Set up Github Copulot for vim.
 - Set up vimrc and gitconfig from the repo.
 - Add the [Custom Commands](https://github.com/JCSnap/cli-tools) for the terminal.
@@ -140,6 +159,7 @@ This section is outdated. I have now switched over to neovim, and my configurati
 - `H` Put your cursor at the High of the page.  
 - `M` Put your cursor at the Medium of the page. Let's say you have skipped many pages using `Ctrl` + `F` and reached the page that you want and the part that you want to edit is around the center of the page. Using this command is a quite way to get your cursor closer towards where you want it to be.  
 - `L` Put your cursor at the Low of the page.  
+- `m[number]` Mark the current cursor location to [number], the next time you want to come back to the location, use ```[number]``
 
 ### Manipulation
 - `o` Create a new line and start writing. 
@@ -169,12 +189,16 @@ The ones above should be sufficient to do like 90% of the tasks. Here are some o
 - `zz` Move the cursor to the middle of the screen.  
 - `GV` Reselect the previously selection. I normally use this when I select a code block and add indentation with `>`. Then I realized I need more indentation, thus I had to reselect the previous code block to add another indentation.  
 - `^` Go to the first non white-space character of the line.  
- 
+- `gx` opens the URL at your cursor
+
 Note that these are just the basic commands, and the best way to remember them is to actually experiment and use them. You should also try chaining different commands together and notice the patterns (eg. if I know what `w` does and what `b` does, and I know `NUMBER` + `w` works, I can assume that `NUMBER` + `b` would also work. The learning curve is quite steep, but once you get the hang of it, it actually helps a lot in improving efficiency. I am still actively trying. You will start to weed out the omes that you find helpful and remembering them will come naturally. Different people have different workflows, so it is completely fine if you find some of these redundant.
 
 **Commands that I find helpful and I am still trying to incorporate into my workflow**
 - Using `HJKL` instead of `Up/Down/Left/Right` arrow key.  
 - Chaining commands together to manipulate text. For example, suppose I want to change variableName to constantName. I would normally just delete the whole word and rewrite it. However, I could do something like `ctN` as in delete the words up until before `N` and go into insert mode.  
+- `ctrl u` and `ctrl d` for vertical navigation
+- `;` and `,` to repeat commands, especially when finding
+- `*` and `#` for going to the next/previous word of the current cursor
 
 ## VSCode
 

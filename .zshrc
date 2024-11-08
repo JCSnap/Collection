@@ -1,6 +1,9 @@
 export PATH="$JAVA_HOME/bin:$PATH"
-export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk-11.0.17.jdk/Contents/Home"
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home"
 export HOME="/Users/jcjustin"
+export ANDROID_HOME="/Users/jcjustin/Library/Android/sdk"
+export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
+export PGDATA="/opt/homebrew/var/postgresql@15"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -17,9 +20,10 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-source /Users/jcjustin/Documents/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /Users/jcjustin/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 source /Users/jcjustin/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /Users/jcjustin/.zsh/zsh-vi-mode/zsh-vi-mode.zsh
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
@@ -29,7 +33,6 @@ export NVM_DIR="$HOME/.nvm"
 alias java11="/Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home/bin/java"
 alias javac11="/Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home/bin/javac"
 alias vim="nvim"
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home
 
 source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
 source /opt/homebrew/opt/chruby/share/chruby/auto.sh

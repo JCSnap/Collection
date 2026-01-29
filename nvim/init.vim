@@ -7,6 +7,7 @@
 :set softtabstop=4
 :set mouse=a
 
+
 call plug#begin()
 
 Plug 'http://github.com/tpope/vim-surround' " Surrounding ysw)
@@ -20,6 +21,7 @@ Plug 'https://github.com/github/copilot.vim' " Github Copilot
 Plug 'https://github.com/ctrlpvim/ctrlp.vim' " Command p for file search similar to VSCode
 Plug 'https://github.com/folke/which-key.nvim' " Which Key
 Plug 'https://github.com/iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' } " Markdown Preview
+Plug 'https://github.com/MeanderingProgrammer/render-markdown.nvim' " Markdown Renderer
 Plug 'norcalli/nvim-colorizer.lua' " Colorizer
 Plug 'themaxmarchuk/tailwindcss-colors.nvim' " Tailwind CSS Colors
 Plug 'https://github.com/tailwindlabs/tailwindcss-intellisense' " Tailwind CSS IntelliSense
@@ -29,11 +31,31 @@ Plug 'MunifTanjim/nui.nvim' " Dependency for noicevim
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'https://github.com/rcarriga/nvim-notify' " Notifications
 Plug 'https://github.com/folke/noice.nvim' " Noice Vim
+Plug 'nvim-lua/plenary.nvim' " Required dependency for leetcode.nvim
+Plug 'nvim-telescope/telescope.nvim' " Required for leetcode.nvim picker
+Plug 'https://github.com/kawre/leetcode.nvim' " Leetcode
+Plug 'https://github.com/mrcjkb/haskell-tools.nvim' " haskell
 
 call plug#end()
 
+lua << EOF
+require("render-markdown").setup({
+  code = {
+    style = "full",
+    border = "hide",
+    width = "full",
+    language = true,
+    language_icon = true,
+    language_name = true,
+    inline = true,
+  },
+})
+EOF
+
+
 let g:NERDTreeDirArrowExpandable="+"
 let g:NERDTreeDirArrowCollapsible="~"
+let g:NERDTreeShowHidden=1
 
 " Auto start NERD tree when opening a directory
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | wincmd p | endif
@@ -43,15 +65,39 @@ autocmd FileType json syntax match Comment +\/\/.\+$+
 nnoremap <SPACE> <Nop>
 let mapleader=" "
 
+let g:NERDTreeChDirMode = 0
+
 nnoremap <silent> <leader>f :NERDTreeFocus<CR>
 nnoremap <silent> <leader>t :NERDTreeToggle<CR>
 nnoremap <silent> <leader>m :MarkdownPreviewToggle<CR>
+
+" If we're in NERDTree, jump to the previous window before running Telescope
+function! s:GoPrevIfNERDTree() abort
+  if &filetype ==# 'nerdtree'
+    wincmd p
+  endif
+endfunction
+
+function! s:TelescopeFindFiles() abort
+  call <SID>GoPrevIfNERDTree()
+  lua require('telescope.builtin').find_files({ cwd = vim.fn.getcwd() })
+endfunction
+
+function! s:TelescopeLiveGrep() abort
+  call <SID>GoPrevIfNERDTree()
+  lua require('telescope.builtin').live_grep({ cwd = vim.fn.getcwd() })
+endfunction
+
+nnoremap <silent> <leader>ff :call <SID>TelescopeFindFiles()<CR>
+nnoremap <silent> <leader>fg :call <SID>TelescopeLiveGrep()<CR>
 
 :set completeopt-=preview " For No Previews
 
 :set clipboard+=unnamedplus
 
 :colorscheme jellybeans
+
+hi Normal guibg=NONE ctermbg=NONE
 
 " Some servers have issues with backup files, see #649
 set nobackup
@@ -118,5 +164,18 @@ endfunction
 nnoremap <silent> <leader>s :CocCommand prettier.formatFile<CR>
 nnoremap <silent> <leader>p :CtrlP<CR>
 
-lua require("noice").setup()
+" Leetcode keybindings
+nnoremap <silent> <leader>lq :Leet<CR>
+nnoremap <silent> <leader>ll :Leet list<CR>
+nnoremap <silent> <leader>lr :Leet run<CR>
+nnoremap <silent> <leader>ls :Leet submit<CR>
+
+" lua require("noice").setup()
 lua require("which-key").setup()
+
+" Leetcode.nvim configuration
+lua << EOF
+require("leetcode").setup({
+    lang = "python3",
+})
+EOF
